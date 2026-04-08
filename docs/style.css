@@ -102,6 +102,9 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-card::before {

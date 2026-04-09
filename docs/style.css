@@ -648,14 +648,26 @@ footer {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(168, 85, 247, 0.2);
     border-radius: 1rem;
-    padding: 2.5rem;
+    padding: 2rem;
     transition: all 0.4s ease;
     display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 0.6s ease forwards;
+}
+
+@media (min-width: 768px) {
+    .education-card {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        padding: 2.5rem;
+        gap: 1.5rem;
+    }
 }
 
 .education-card:nth-child(1) { animation-delay: 0.2s; }
@@ -700,6 +712,14 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .education-meta {
+        align-items: flex-start;
+    }
 }
 
 .education-year {
